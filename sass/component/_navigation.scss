@@ -1,0 +1,62 @@
+.nav{
+	padding:20px;
+	
+	h1{
+		background:$dtGrey;
+		float:left;
+		text-indent:-9999px;
+		width:220px;
+		height:45px;
+	}
+	
+	ul{
+		float:left;
+		padding:5px 0 0 0;
+		margin:0 0 0 30px;
+		li{
+			position:relative;
+			float:left;
+			a{
+				font-size:0.875em;
+				font-weight:bold;
+				display:block;
+				padding:10px 14px;
+				
+			}
+			
+			&:hover {
+				background:$dtDarkGrey;
+				
+				a{
+					background-color :$dtDarkGrey;
+					color:#fff;
+				}
+			}
+			
+			&:hover .dropDown{
+				
+				display:block;
+					
+			}
+			
+			.dropDown{
+				display:none;
+				width:160px;
+				position:absolute;
+				top:38px;
+				left:-30px;
+				background:$dtDarkGrey;
+				z-index:9999;
+				padding:15px;
+				
+				li{
+					a{
+						color:$white;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
