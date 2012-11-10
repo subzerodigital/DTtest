@@ -1,0 +1,20 @@
+.pageContent{
+	padding:140px 20px 20px 20px;
+	background:$dtUltraLightGrey;
+	
+	
+	.productShot{
+		border:4px solid $white;
+		background:$dtDarkGrey;
+		float:left;
+		width:346px;
+		height:240px; 
+		margin-right:10px;
+	}
+	
+	.content{
+		float:left;
+		padding:20px;
+		width:510px;
+	}
+}

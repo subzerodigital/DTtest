@@ -20,8 +20,6 @@
 				z-index:2;
 			}
 		}
-		
-		
 	
 	}
 	
@@ -31,14 +29,16 @@
 		left:82px;
 		z-index:4;
 		background:url("../imgs/bannerNavBg.gif") 0 0 repeat-x;
-		border:5px solid $dtMediumGrey;
 		li{
+			border:5px solid $dtMediumGrey;
+			border-left:none;
+			border-right:none;
 			width:200px;
 			height:100px;
 			float:left;
 			cursor:pointer;
-			border-right:2px solid $dtUltraLightGrey;
 			a{
+				border-right:2px solid $dtUltraLightGrey;
 				display:block;
 				font-size:3em;
 				line-height:1.25em;
@@ -46,7 +46,20 @@
 				color:$dtUltraGrey;
 				text-align:center;
 				padding:20px 20px 20px 20px;
-			}			
+				
+			}	
+			
+			&.first{
+				border-left:5px solid $dtMediumGrey;
+			}
+				
+			&.last{
+				border-right:5px solid $dtMediumGrey;
+			}
+			
+			&.active{
+					border:5px solid $dtDarkGrey;
+			}	
 			
 		}
 		

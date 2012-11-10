@@ -60,6 +60,14 @@ a:link, a:visited, a:active {
 h1 {
   font-size: 2em; }
 
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+p {
+  font-size: 0.85em; }
+
 .carousel {
   min-height: 450px;
   position: relative; }
@@ -80,15 +88,17 @@ h1 {
     bottom: -92px;
     left: 82px;
     z-index: 4;
-    background: url("../imgs/bannerNavBg.gif") 0 0 repeat-x;
-    border: 5px solid #b1b1b1; }
+    background: url("../imgs/bannerNavBg.gif") 0 0 repeat-x; }
     .carousel .control li {
+      border: 5px solid #b1b1b1;
+      border-left: none;
+      border-right: none;
       width: 200px;
       height: 100px;
       float: left;
-      cursor: pointer;
-      border-right: 2px solid #e2e2e2; }
+      cursor: pointer; }
       .carousel .control li a {
+        border-right: 2px solid #e2e2e2;
         display: block;
         font-size: 3em;
         line-height: 1.25em;
@@ -96,6 +106,12 @@ h1 {
         color: #3e3e3e;
         text-align: center;
         padding: 20px 20px 20px 20px; }
+      .carousel .control li.first {
+        border-left: 5px solid #b1b1b1; }
+      .carousel .control li.last {
+        border-right: 5px solid #b1b1b1; }
+      .carousel .control li.active {
+        border: 5px solid dimgrey; }
 
 .nav {
   padding: 20px;
@@ -161,3 +177,18 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
   height: 1%; }
+
+.pageContent {
+  padding: 140px 20px 20px 20px;
+  background: #e2e2e2; }
+  .pageContent .productShot {
+    border: 4px solid white;
+    background: dimgrey;
+    float: left;
+    width: 346px;
+    height: 240px;
+    margin-right: 10px; }
+  .pageContent .content {
+    float: left;
+    padding: 20px;
+    width: 510px; }

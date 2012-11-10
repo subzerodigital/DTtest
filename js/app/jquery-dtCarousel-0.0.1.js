@@ -31,6 +31,7 @@
 		this.$el = $el;
 		this.options = $.extend(defaults,options);
 		
+		this.$buttonBox = this.$el.find(".control");
 		this.$buttons = this.$el.find(".control li a");
 		this.$slides = this.$el.find(".slides .slide");
 		
@@ -44,7 +45,7 @@
 		init:function(){
 			
 			//init start states, 1st slide is active by default
-			this.$buttons.first().addClass("active");
+			this.$buttons.first().addClass("active").parent("li").addClass("active");
 			this.$slides.first().addClass("current");
 			
 			//bind click event
@@ -80,7 +81,9 @@
 				
 				//change button states
 				self.$buttons.removeClass("active");
+				self.$buttonBox.find("li").removeClass("active");
 				$(this).addClass("active");
+				$(this).parent("li").addClass("active");
 				//
 				self.fadeInSlide(index);
 				
