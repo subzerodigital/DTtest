@@ -7,7 +7,7 @@
  * binding class: fn-carousel 
  * License: none (public domain)
  * 
- * TODO:
+ * TODO:add more transition support
  ***************************************************/
 
 (function(window,undefined){
@@ -22,7 +22,7 @@
 	var defaults = {
 		autoPlay:false,
 		interval:5000,
-		fadeSpeed:500
+		fadeSpeed:300
 	}
 	
 	//constructor
@@ -45,7 +45,7 @@
 		init:function(){
 			
 			//init start states, 1st slide is active by default
-			this.$buttons.first().addClass("active").parent("li").addClass("active");
+			this.$buttons.first().addClass("active").parent("li").addClass("active").append("<div class='arrow'></div>");
 			this.$slides.first().addClass("current");
 			
 			//bind click event
@@ -81,12 +81,16 @@
 				
 				//change button states
 				self.$buttons.removeClass("active");
-				self.$buttonBox.find("li").removeClass("active");
+				self.$buttonBox.find("li").removeClass("active").find(".arrow").remove();
 				$(this).addClass("active");
-				$(this).parent("li").addClass("active");
-				//
+				//I Know appending to DOM is pretty bad, but IE7 Doesn't support :after/:before
+				//to have a nice 'active arrow' in the carousel buttons, let's do this for now
+				$(this).parent("li").addClass("active").append("<div class='arrow'></div>");
+				//fade slide
 				self.fadeInSlide(index);
 				
+				//restart timer
+				//Q:may be stop timer completely once user start interacting with carousel?
 				if(self.options.autoPlay){
 					self.startTimer();
 				}
@@ -95,14 +99,12 @@
 		},
 		
 		fadeInSlide:function(index){
-			
-			var $currentSlide = this.$el.find(".slide.current");			
-			
-			var $nextSlide= this.$slides.eq(index);
-			
+			var self = this;
+			var $currentSlide = self.$el.find(".slide.current");			
+			var $nextSlide= self.$slides.eq(index);
+			// class : .current .previous are essential to achieve the best cross fade effect
 			$currentSlide.removeClass("current").addClass('previous');
-			
-			$nextSlide.css({opacity:0.0}).addClass("current").animate({opacity:1.0},500,function(){
+			$nextSlide.css({opacity:0.0}).addClass("current").animate({opacity:1.0},self.options.fadeSpeed,function(){
 				$currentSlide.removeClass("previous");
 			});
 		},
@@ -130,6 +132,7 @@
 	
 	$.fn.dtCarousel = function(options){
 		return this.each(function(){
+			//cache object to 'data' for debug
 			$(this).data("dtCarousel",new dtCarousel($(this),options));
 		});
 	}

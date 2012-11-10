@@ -40,12 +40,12 @@
 			a{
 				border-right:2px solid $dtUltraLightGrey;
 				display:block;
-				font-size:3em;
+				font-size:4.9em;
 				line-height:1.25em;
 				font-weight:bold;
 				color:$dtUltraGrey;
 				text-align:center;
-				padding:20px 20px 20px 20px;
+				padding:19px 20px 19px 20px;
 				
 			}	
 			
@@ -58,8 +58,23 @@
 			}
 			
 			&.active{
-					border:5px solid $dtDarkGrey;
+					border:5px solid $dtUltraGrey;
+					position:relative;
 			}	
+			
+			.arrow{
+			
+				width: 0; 
+				height: 0; 
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid $dtUltraGrey;
+				
+				display:block;
+				position:absolute;
+				top:-15px;
+				left:90px;
+			}
 			
 		}
 		

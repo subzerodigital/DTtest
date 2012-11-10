@@ -1,5 +1,3 @@
 $(function(){
-	
-	
-	$(".fn-carousel").dtCarousel({autoPlay:true,interval:3000,fadeSpeed:200});
+	$(".fn-carousel").dtCarousel({autoPlay:true,interval:3000,fadeSpeed:500});
 })

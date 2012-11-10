@@ -1,0 +1,28 @@
+.footer{
+	padding:20px;
+	background:$white;
+	
+	.contact{
+		ul{
+			margin-bottom:15px;
+			li{
+				a{
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	
+	.warranty{
+	
+		width:330px;
+	
+		.warrantyLogo {
+			width:125px;
+			height:68px;
+			text-indent:-9999px;
+			background:url(../imgs/sprite.png) 2px 5px no-repeat;
+		}
+	
+	}	
+}
