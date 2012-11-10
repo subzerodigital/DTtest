@@ -1,13 +1,12 @@
 
-
+body{
+	background:url(../imgs/bg.gif) 50% 0 repeat-y;
+}
 
 .bodyWrapper{
 	width:970px;
 	margin:0 auto;
-	border:1px solid red;
 }
-
-
 
 .clearfix:after {
 	content: ".";

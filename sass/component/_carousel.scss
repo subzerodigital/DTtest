@@ -1,6 +1,5 @@
 .carousel{
 	min-height:450px;
-	border:1px solid cyan;
 	position:relative;
 	
 	.slides{
@@ -9,7 +8,6 @@
 		
 			width:970px;
 			height:450px;
-			border:1px solid yellow;
 			position:absolute;
 			z-index:0;
 			background:$white;
@@ -29,22 +27,25 @@
 	
 	.control{
 		position:absolute;
-		bottom:-90px;
-		left:88px;
+		bottom:-92px;
+		left:82px;
 		z-index:4;
+		background:url("../imgs/bannerNavBg.gif") 0 0 repeat-x;
+		border:5px solid $dtMediumGrey;
 		li{
-			width:204px;
-			height:112px;
-			border:1px solid red;
+			width:200px;
+			height:100px;
 			float:left;
 			cursor:pointer;
+			border-right:2px solid $dtUltraLightGrey;
 			a{
 				display:block;
 				font-size:3em;
+				line-height:1.25em;
+				font-weight:bold;
 				color:$dtUltraGrey;
 				text-align:center;
-				line-height:2.3em;
-				
+				padding:20px 20px 20px 20px;
 			}			
 			
 		}

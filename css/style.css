@@ -62,14 +62,12 @@ h1 {
 
 .carousel {
   min-height: 450px;
-  border: 1px solid cyan;
   position: relative; }
   .carousel .slides {
     position: relative; }
     .carousel .slides .slide {
       width: 970px;
       height: 450px;
-      border: 1px solid yellow;
       position: absolute;
       z-index: 0;
       background: white; }
@@ -79,21 +77,25 @@ h1 {
         z-index: 2; }
   .carousel .control {
     position: absolute;
-    bottom: -90px;
-    left: 88px;
-    z-index: 4; }
+    bottom: -92px;
+    left: 82px;
+    z-index: 4;
+    background: url("../imgs/bannerNavBg.gif") 0 0 repeat-x;
+    border: 5px solid #b1b1b1; }
     .carousel .control li {
-      width: 204px;
-      height: 112px;
-      border: 1px solid red;
+      width: 200px;
+      height: 100px;
       float: left;
-      cursor: pointer; }
+      cursor: pointer;
+      border-right: 2px solid #e2e2e2; }
       .carousel .control li a {
         display: block;
         font-size: 3em;
+        line-height: 1.25em;
+        font-weight: bold;
         color: #3e3e3e;
         text-align: center;
-        line-height: 2.3em; }
+        padding: 20px 20px 20px 20px; }
 
 .nav {
   padding: 20px;
@@ -136,10 +138,12 @@ h1 {
         .nav ul li .dropDown li a {
           color: white; }
 
+body {
+  background: url(../imgs/bg.gif) 50% 0 repeat-y; }
+
 .bodyWrapper {
   width: 970px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
 
 .clearfix:after {
   content: ".";
