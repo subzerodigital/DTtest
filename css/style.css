@@ -60,6 +60,41 @@ a:link, a:visited, a:active {
 h1 {
   font-size: 2em; }
 
+.carousel {
+  min-height: 450px;
+  border: 1px solid cyan;
+  position: relative; }
+  .carousel .slides {
+    position: relative; }
+    .carousel .slides .slide {
+      width: 970px;
+      height: 450px;
+      border: 1px solid yellow;
+      position: absolute;
+      z-index: 0;
+      background: white; }
+      .carousel .slides .slide.previous {
+        z-index: 1; }
+      .carousel .slides .slide.current {
+        z-index: 2; }
+  .carousel .control {
+    position: absolute;
+    bottom: -90px;
+    left: 88px;
+    z-index: 4; }
+    .carousel .control li {
+      width: 204px;
+      height: 112px;
+      border: 1px solid red;
+      float: left;
+      cursor: pointer; }
+      .carousel .control li a {
+        display: block;
+        font-size: 3em;
+        color: #3e3e3e;
+        text-align: center;
+        line-height: 2.3em; }
+
 .nav {
   padding: 20px; }
   .nav h1 {
