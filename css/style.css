@@ -96,7 +96,9 @@ h1 {
         line-height: 2.3em; }
 
 .nav {
-  padding: 20px; }
+  padding: 20px;
+  z-index: 5;
+  position: relative; }
   .nav h1 {
     background: #dbdbdb;
     float: left;

@@ -1,6 +1,7 @@
 .nav{
 	padding:20px;
-	
+	z-index:5;
+	position:relative;
 	h1{
 		background:$dtGrey;
 		float:left;

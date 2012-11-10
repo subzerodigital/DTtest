@@ -39,17 +39,41 @@
 	dtCarousel.prototype = {
 		init:function(){
 			
+			//init start states, 1st slide is active by default
+			this.$buttons.first().addClass("active");
+			this.$slides.first().addClass("current");
+			
+			//bind click event
+			this.bind();
+			
+		},
+		
+		bind:function(){
 			var self = this;
+			
 			self.$buttons.click(function(e){
 				e.preventDefault();
 				//get the index of the clicked button
 				var index = self.$buttons.index(this);
+				
+				//if click on the current active button, do nothing
+				if($(this).hasClass("active")){
+					return false;
+				}
+				
+				self.$buttons.removeClass("active");
+				$(this).addClass("active");
 				self.fadeInSlide(index);
 			});
+			
 		},
+		
 		fadeInSlide:function(index){
 			
-			var $currentSlide = this.$el.find(".slide.current");
+			
+			
+			var $currentSlide = this.$el.find(".slide.current");			
+			
 			var $nextSlide= this.$slides.eq(index);
 			
 			$currentSlide.removeClass("current").addClass('previous');
