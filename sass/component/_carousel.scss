@@ -34,9 +34,16 @@
 			border-left:none;
 			border-right:none;
 			width:200px;
-			height:100px;
+			height:108px;
+			*height:100px;
 			float:left;
 			cursor:pointer;
+			
+			
+			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+			box-sizing: border-box;         /* Opera/IE 8+ */
+			
 			a{
 				border-right:2px solid $dtUltraLightGrey;
 				display:block;
@@ -45,7 +52,7 @@
 				font-weight:bold;
 				color:$dtUltraGrey;
 				text-align:center;
-				padding:19px 20px 19px 20px;
+				padding:18px 20px 18px 20px;
 				
 			}	
 			
@@ -73,7 +80,7 @@
 				display:block;
 				position:absolute;
 				top:-15px;
-				left:90px;
+				left:87px;
 			}
 			
 		}
