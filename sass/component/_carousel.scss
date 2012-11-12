@@ -38,7 +38,7 @@
 			*height:100px;
 			float:left;
 			cursor:pointer;
-			
+			outline:none;
 			
 			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -53,15 +53,22 @@
 				color:$dtUltraGrey;
 				text-align:center;
 				padding:18px 20px 18px 20px;
-				
+				outline:none;
 			}	
 			
 			&.first{
 				border-left:5px solid $dtMediumGrey;
+				z-index:5;
+				position:relative;
 			}
 				
 			&.last{
 				border-right:5px solid $dtMediumGrey;
+				z-index:6;
+				position:relative;
+				a{
+					border-right:none;
+				}
 			}
 			
 			&.active{
