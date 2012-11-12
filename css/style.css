@@ -232,3 +232,22 @@ html[xmlns] .clearfix {
     width: 510px; }
     .pageContent .content h2 {
       text-shadow: 2px 2px 1px #fff; }
+
+.redButton {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+  font-weight: bold;
+  background: url(../imgs/sprite.png) -3px -68px no-repeat;
+  width: 156px;
+  height: 34px;
+  padding-top: 9px;
+  margin-top: 15px;
+  cursor: pointer; }
+  .redButton .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    vertical-align: middle;
+    background: url(../imgs/sprite.png) -126px -26px no-repeat; }
