@@ -191,7 +191,10 @@ a:link, a:visited, a:active {
         left: -30px;
         background: dimgrey;
         z-index: 9999;
-        padding: 15px; }
+        padding: 15px;
+        -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3); }
         .nav ul li .dropDown li a {
           color: white; }
 
