@@ -1,6 +1,16 @@
+
+
+/*sticky footer*/
+
 .footer{
+	
 	padding:20px;
 	background:$white;
+	width:928px;
+	position:relative;
+	margin:-115px auto 0 auto;
+	height:75px;
+	clear:both;
 	
 	.contact{
 		ul{

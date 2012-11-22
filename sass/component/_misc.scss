@@ -1,3 +1,6 @@
+html,body{
+	height:100%;
+}
 
 body{
 	background:url(../imgs/bg.gif) 50% 0 repeat-y;
@@ -6,6 +9,12 @@ body{
 .bodyWrapper{
 	width:970px;
 	margin:0 auto;
+	min-height:100%;
+	position:relative;
+}
+
+.main{
+	padding-bottom:115px;
 }
 
 .clearfix:after {

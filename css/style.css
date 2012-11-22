@@ -104,6 +104,7 @@ a:link, a:visited, a:active {
       *height: 100px;
       float: left;
       cursor: pointer;
+      outline: none;
       -webkit-box-sizing: border-box;
       /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;
@@ -118,11 +119,18 @@ a:link, a:visited, a:active {
         font-weight: bold;
         color: #3e3e3e;
         text-align: center;
-        padding: 18px 20px 18px 20px; }
+        padding: 18px 20px 18px 20px;
+        outline: none; }
       .carousel .control li.first {
-        border-left: 5px solid #b1b1b1; }
+        border-left: 5px solid #b1b1b1;
+        z-index: 5;
+        position: relative; }
       .carousel .control li.last {
-        border-right: 5px solid #b1b1b1; }
+        border-right: 5px solid #b1b1b1;
+        z-index: 6;
+        position: relative; }
+        .carousel .control li.last a {
+          border-right: none; }
       .carousel .control li.active {
         border: 5px solid #3e3e3e;
         position: relative; }
@@ -134,12 +142,18 @@ a:link, a:visited, a:active {
         border-bottom: 10px solid #3e3e3e;
         display: block;
         position: absolute;
-        top: -15px;
+        top: -14px;
         left: 87px; }
 
+/*sticky footer*/
 .footer {
   padding: 20px;
-  background: white; }
+  background: white;
+  width: 928px;
+  position: relative;
+  margin: -115px auto 0 auto;
+  height: 75px;
+  clear: both; }
   .footer .contact ul {
     margin-bottom: 15px; }
     .footer .contact ul li a {
@@ -198,12 +212,20 @@ a:link, a:visited, a:active {
         .nav ul li .dropDown li a {
           color: white; }
 
+html, body {
+  height: 100%; }
+
 body {
   background: url(../imgs/bg.gif) 50% 0 repeat-y; }
 
 .bodyWrapper {
   width: 970px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative; }
+
+.main {
+  padding-bottom: 115px; }
 
 .clearfix:after {
   content: ".";
