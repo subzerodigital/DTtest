@@ -32,7 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-size: 62.5%;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  padding: 10px; }
 
 ol, ul {
   list-style: none; }
@@ -49,239 +50,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, p, span, strong, a, ul, li, div {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal; }
+.homeWrapper {
+  padding: 10px; }
 
-h1 {
-  font-size: 3em; }
+.hero {
+  max-width: 480px; }
 
-h2 {
-  font-size: 2.215em;
-  font-weight: bold;
-  padding-bottom: 15px; }
-
-h3 {
-  font-size: 1.2em;
-  font-weight: bold; }
-
-a, p {
-  font-size: 1.2em;
-  line-height: 1.5em; }
-
-a:link, a:visited, a:active {
-  color: black;
-  text-decoration: none;
-  font-weight: normal; }
-
-.carousel {
-  min-height: 450px;
-  position: relative; }
-  .carousel .slides {
-    position: relative; }
-    .carousel .slides .slide {
-      width: 970px;
-      height: 450px;
-      position: absolute;
-      z-index: 0;
-      background: white; }
-      .carousel .slides .slide.previous {
-        z-index: 1; }
-      .carousel .slides .slide.current {
-        z-index: 2; }
-  .carousel .control {
-    position: absolute;
-    bottom: -92px;
-    left: 82px;
-    z-index: 4;
-    background: url("../imgs/bannerNavBg.gif") 0 5px white repeat-x; }
-    .carousel .control li {
-      border: 5px solid #b1b1b1;
-      border-left: none;
-      border-right: none;
-      width: 200px;
-      height: 108px;
-      *height: 100px;
-      float: left;
-      cursor: pointer;
-      outline: none;
-      -webkit-box-sizing: border-box;
-      /* Safari/Chrome, other WebKit */
-      -moz-box-sizing: border-box;
-      /* Firefox, other Gecko */
-      box-sizing: border-box;
-      /* Opera/IE 8+ */ }
-      .carousel .control li a {
-        border-right: 2px solid #e2e2e2;
-        display: block;
-        font-size: 4.9em;
-        line-height: 1.25em;
-        font-weight: bold;
-        color: #3e3e3e;
-        text-align: center;
-        padding: 18px 20px 18px 20px;
-        outline: none; }
-      .carousel .control li.first {
-        border-left: 5px solid #b1b1b1;
-        z-index: 5;
-        position: relative; }
-      .carousel .control li.last {
-        border-right: 5px solid #b1b1b1;
-        z-index: 6;
-        position: relative; }
-        .carousel .control li.last a {
-          border-right: none; }
-      .carousel .control li.active {
-        border: 5px solid #3e3e3e;
-        position: relative; }
-      .carousel .control li .arrow {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #3e3e3e;
-        display: block;
-        position: absolute;
-        top: -14px;
-        left: 87px; }
-
-/*sticky footer*/
-.footer {
-  padding: 20px;
-  background: white;
-  width: 928px;
-  position: relative;
-  margin: -115px auto 0 auto;
-  height: 75px;
-  clear: both; }
-  .footer .contact ul {
-    margin-bottom: 15px; }
-    .footer .contact ul li a {
-      font-weight: bold; }
-  .footer .warranty {
-    width: 330px; }
-    .footer .warranty h3 {
-      padding-bottom: 5px; }
-    .footer .warranty .warrantyLogo {
-      width: 125px;
-      height: 68px;
-      text-indent: -9999px;
-      background: url(../imgs/sprite.png) 2px 5px no-repeat; }
-
-.nav {
-  padding: 20px;
-  z-index: 5;
-  position: relative; }
-  .nav h1 {
-    background: #dbdbdb;
-    float: left;
-    text-indent: -9999px;
-    width: 220px;
-    height: 45px; }
-  .nav ul {
-    float: left;
-    padding: 5px 0 0 0;
-    margin: 0 0 0 30px; }
-    .nav ul li {
-      position: relative;
-      float: left; }
-      .nav ul li a {
-        font-size: 1.4em;
-        font-weight: bold;
-        display: block;
-        padding: 10px 14px; }
-      .nav ul li:hover {
-        background: dimgrey; }
-        .nav ul li:hover a {
-          background-color: dimgrey;
-          color: #fff; }
-      .nav ul li:hover .dropDown {
-        display: block; }
-      .nav ul li .dropDown {
-        display: none;
-        width: 160px;
-        position: absolute;
-        top: 35px;
-        left: -30px;
-        background: dimgrey;
-        z-index: 9999;
-        padding: 15px;
-        -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3); }
-        .nav ul li .dropDown li a {
-          color: white; }
-
-html, body {
-  height: 100%; }
-
-body {
-  background: url(../imgs/bg.gif) 50% 0 repeat-y; }
-
-.bodyWrapper {
-  width: 970px;
-  margin: 0 auto;
-  min-height: 100%;
-  position: relative; }
-
-.main {
-  padding-bottom: 115px; }
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.clearfix {
-  display: inline-block; }
-
-html[xmlns] .clearfix {
+.hero img {
+  max-width: 100%;
+  height: auto;
   display: block; }
 
-* html .clearfix {
-  height: 1%; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: georgia , arial, sans-serif; }
 
-.floatLeft {
-  float: left; }
-
-.floatRight {
-  float: right; }
-
-.pageContent {
-  padding: 130px 20px 20px 20px;
-  background: #e2e2e2; }
-  .pageContent .productShot {
-    border: 4px solid white;
-    background: dimgrey;
-    float: left;
-    width: 346px;
-    height: 240px;
-    margin-right: 10px; }
-  .pageContent .content {
-    float: left;
-    padding: 20px;
-    width: 510px; }
-    .pageContent .content h2 {
-      text-shadow: 2px 2px 1px #fff; }
-
-.redButton {
-  display: inline-block;
-  text-align: center;
-  font-size: 1.4em;
-  color: white;
-  font-weight: bold;
-  background: url(../imgs/sprite.png) -3px -68px no-repeat;
-  width: 156px;
-  height: 34px;
-  padding-top: 9px;
-  margin-top: 15px;
-  cursor: pointer; }
-  .redButton .arrow {
-    display: inline-block;
-    width: 12px;
-    height: 10px;
-    vertical-align: middle;
-    background: url(../imgs/sprite.png) -126px -26px no-repeat; }
+h1 {
+  font-size: 3em;
+  line-height: 1.5em; }

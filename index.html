@@ -1,108 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<!-- YES, As per requirement this is still a XHTML file-->
-<!-- and no fancy html5 nav/aside/article/footer tags are used for now -->
-
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="viewport" content="width=device-width" />
-    <title>DT Challenge</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    -->
+    <link rel="stylesheet" href="css//style.css">
+
+</head>
 <body>
-	<div class="bodyWrapper">
-		<div class="main">
-		
-			<!-- navigation -->
-			<div class="nav clearfix">
-				<h1>DT challenge</h1>
-				<ul class="clearfix">
-					<li>
-						<a tabIndex="1" href="#">Range</a>
-						<ul class="dropDown">
-							<li><a>dropdown item1</a></li>
-							<li><a>dropdown item2</a></li>
-							<li><a>dropdown item3</a></li>
-							<li><a>dropdown item4</a></li>
-						</ul>
-					</li>
-					<li><a tabIndex="2" href="#">Where to buy</a>
-						<ul class="dropDown">
-							<li><a>dropdown item1</a></li>
-							<li><a>dropdown item2</a></li>
-							<li><a>dropdown item1</a></li>
-							<li><a>dropdown item3</a></li>
-						</ul>
-					</li>
-					<li><a tabIndex="3" href="#">Warranty</a></li>
-					<li><a tabIndex="4"href="#">Contact us</a></li>
-				</ul>
-			</div>
-			
-			<!-- product carousel -->
-			<div class="carousel fn-carousel">
-				<div class="slides clearfix">
-					<div class='slide'><img alt="this is the first slide" src="imgs/slide1.jpg"></img></div>
-					<div class='slide'><img alt="2nd slide" src="imgs/slide2.jpg"></img></div>
-					<div class='slide'><img alt="3rd slide" src="imgs/slide3.jpg"></img></div>
-					<div class='slide'><img alt="4th slide" src="imgs/slide4.jpg"></img></div>
-				</div>
-				
-				<ul class="control clearfix">
-					<li class="first"><a tabIndex="5" href="#">1</a></li>
-					<li><a tabIndex="6" href="#">2</a></li>
-					<li><a tabIndex="7" href="#">3</a></li>
-					<li class="last"><a tabIndex="8" href="#">4</a></li>
-				</ul>
-				
-			</div>
-			
-			
-			<!-- page content -->
-			
-			<div class="pageContent clearfix">
-				<div class="productShot floatLeft">
-				</div>
-				<div class="content floatRight">
-					<h2>ALL ABOUT OUR PRODUCT</h2>
-					<p>Praesent fermentum, libero nec venenatis commodo, felis nibh ornare erat; eget commodo sapien metus nec dolor. Aliquam eu mauris sed tortor mattis rutrum vel blandit erat. Proin eget dolor tellus. In hac habitasse platea dictumst.Aliquam eu maurs sed tortor mattis rutrum vel blandit erat. Proin eget dolor tellus. In hac habitasse platea dictumst.</p><br />
-					<p>Aliquam eu mauris sed tortor mattis rutrum vel blandit erat. Proin eget dolor tellus. In hac habitasse platea dictumst.</p>
-					<a class="redButton" tabIndex="8">View our range<span class="arrow"></span></a>
-				</div>
-			</div>
-			
-		
-		</div>
-	
-	</div>
-	
-	<!-- sticky footer -->
-		
-	<div class="footer clearfix">
-		<div class="contact floatLeft">
-			<ul>
-				<li><a href="#" tabIndex="9">Contact us</a></li>
-				<li><a href="#" tabIndex="10">Where to buy</a></li>
-			</ul>
-			<p>&copy;Copyright 2011, Privacy Policy</p>
-		</div>
-		<div class="warranty clearfix floatRight">
-			<div class="warrantyLogo floatRight">2 year warranty</div>
-			<h3>Warranty</h3>
-			<p>Praesent fermentum, libero nec venenatis commodo, felis nibh ornare erat.</p>
-		</div>
-	</div>
-	
-	
-	<!-- jQuery -->
-	<script type="text/javascript" src="js/lib/jquery-1.8.2.js"></script>
-	<!-- custom Plugins -->
-	<script type="text/javascript" src="js/app/jquery-dtCarousel-0.0.1.js"></script>
-	<!-- init app -->
-	<script type="text/javascript" src="js/appInit.js"></script>
+
+<!-- Add your site or application content here -->
+<h1>Subzero Digital</h1>
+
+<nav></nav>
+
+
+<section class="hero">
+    <div><img src="imgs/hero.jpg" width="480" height="270" /></div>
+</section>
+
+<section class="message">
+    <p>message</p>
+    <a href="http://james.lin.net.nz/2010/09/27/javascript-swipe-demo-works-both-with-finger-ipad-and-mouse-pc/">working</a>
+</section>
+
+<section class="hero2">
+
+</section>
+
+<footer></footer>
+
+<script src="jsmin/app.js"></script>
 </body>
 </html>

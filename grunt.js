@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 	min: {
 		    dist: {
 		      src: manifestLoader.readManifest('./dev/menifests/all-js'),
-		      dest: 'jsmin/built.min.js'
+		      dest: 'jsmin/app.js'
 		 }
 	},
 	
