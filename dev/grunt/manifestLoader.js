@@ -25,6 +25,9 @@ exports.readManifest = function(manifest, pathPrefix) {
     for (var i = 0; i < array.length; i++) {
 
         var file = array[i];
+        
+        //remove newlines returns
+        file = file.replace(/\r$/, '');
 
         if (file.trim() !== "" && file.match(/^#/) === null) {
 
@@ -35,7 +38,7 @@ exports.readManifest = function(manifest, pathPrefix) {
     }
 
     // console.log("Parsed manifest files for " + manifest + ":");
-    // console.log(files);
+    console.log(files);
 
     return files;
 };

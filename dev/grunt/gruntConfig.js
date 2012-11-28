@@ -1,4 +1,8 @@
 {
+	"path":{
+		"tmpl":"dev/tmpl/"
+	},	
+	
 	"manifests":{
 		"js":{
 			"all":{
@@ -9,7 +13,8 @@
 		},
 		"css":{
 			
-		}	
+		}
+		
 	}
 	
 }
