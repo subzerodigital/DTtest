@@ -1,0 +1,15 @@
+@mixin positionAbs($left: null, $top: null, $right: null, $bottom: null) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin positionRel($left: null, $top: null, $right: null, $bottom: null) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}

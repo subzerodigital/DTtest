@@ -35,7 +35,7 @@ function do_work()
         slide_left();
     }
 }
-function slide_right()  
+function slide_right()
 {
     $(".message").text("right");
 }

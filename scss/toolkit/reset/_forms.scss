@@ -1,0 +1,81 @@
+// Improves appearance and consistency in all browsers
+button,
+input,
+select,
+textarea {
+    vertical-align: baseline;
+    *vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+// Corrects inability to style clickable 'input' types in iOS
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+
+// Remove styles from buttons across browsers.
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: 0;
+    margin: 0;
+    background: transparent;
+    color: $textColour;
+}
+
+// Improve usability and consistency of cursor style on buttons and inputs.
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+// Removes inner padding and search cancel button in S5, Chrome on OS X
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+// Removes inner padding and border in FF3+
+// www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// Removes default vertical scrollbar in IE8/9.
+textarea {
+    overflow: auto;
+}
+// Improves readability and alignment in all browsers.
+textarea {
+    vertical-align: top;
+}
+
+// Remove styles from text inputs
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    @include placeholderStyles {
+        color: inherit;
+    }
+    
+    border: 0;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
